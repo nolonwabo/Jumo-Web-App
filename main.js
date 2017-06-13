@@ -28,18 +28,18 @@ container.addEventListener('click', function(evt){
       amount++;
   }
 
-  if (isSelected (target, 'need')){
-  amount--;
-  }
+//  if (isSelected (target, 'need')){
+//  amount--;
+//  }
 
-  else if (notSelected(target, 'need')) {
+  //else if (notSelected(target, 'need')) {
       //luxury up
-      amount++;
-  }
-  if (isSelected(target, 'want')){
-    amount--;
-  }
-  else if (notSelected(target, 'want'))
+    //  amount++;
+//  }
+//  if (isSelected(target, 'want')){
+  //  amount--;
+  //}
+  //else if (notSelected(target, 'want'))
 
 
   //if the element have the selected category already we are going to remove it so the counter for that category needs to go down
@@ -185,17 +185,17 @@ container.addEventListener('click', function(evt){
 // }];
 
 
-//function submitButton() {
-  //for (var i = 0; i < itemList.length; i++) {
-  //  var catagoryList = itemList[i];
-  //}
+function submitButton() {
+  for (var i = 0; i < itemList.length; i++) {
+    var catagoryList = itemList[i];
+  }
 
-//if(Catergory === Luxury && Price <= 100){
+if(Catergory === Luxury && Price <= 100){
 
-//}
+}
 
-//  if (Catergory === Luxury && itemList.Price <= 100) {
+ if (Catergory === Luxury && itemList.Price <= 100) {
 
-  //}
+  }
 
-//}
+}
