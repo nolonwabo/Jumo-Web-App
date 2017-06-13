@@ -33,3 +33,9 @@ body{
         height: 3em;
         background-color: slategrey;
 }
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
