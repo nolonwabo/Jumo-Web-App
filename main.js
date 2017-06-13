@@ -35,6 +35,10 @@ container.addEventListener('click', function(evt){
       //luxury up
       amount++;
   }
+  if (isSelected(target, 'want')){
+    amount--;
+  }
+  else if (notSelected(target, 'want'))
 
 
   //if the element have the selected category already we are going to remove it so the counter for that category needs to go down
