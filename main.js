@@ -1,2 +1,2 @@
 var template = document.querySelector('.myTemplate').innerHTML;
-var myTemp = Handlebars.compile(template);
+//var myTemp = Handlebars.compile(template);
