@@ -1,22 +1,6 @@
 body{
   background:
 }
-.trapezuim{
-text-align: center;
-       border-bottom: 100px solid blue;
-    border-left: 90px solid transparent;
-    border-right: 90px solid transparent;
-    height: 0;
-    width: 40em;
-}
-.lessTrapezium{
-        text-align: center;
-               border-bottom: 80px solid gray;
-            border-left: 50px solid transparent;
-            border-right: 91px solid transparent;
-            height: 0;
-            width: 36.6em;
-}
 
 .category {
         text-align: center;
@@ -35,4 +19,17 @@ text-align: center;
 
 .hidden{
         display: none;
+}
+.categories{
+        text-align: center;
+        font-size: 200%;
+        padding: 0.5em;
+        margin-bottom: 0.2em;
+}
+
+
+.goBack{
+        width: 100px;
+        height: 3em;
+        background-color: slategrey;
 }
