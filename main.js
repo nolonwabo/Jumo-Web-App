@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 var container = document.querySelector('.container');
 
@@ -117,7 +117,7 @@ container.addEventListener('click', function(evt){
 //   Price:
 //   Catergory:
 // }];
-=======
+
 var template = document.querySelector('.myTemplate').innerHTML;
 var myTemp = Handlebars.compile(template);
 
@@ -182,19 +182,19 @@ IconPicture: "apple",
   Price: "45",
   Catergory:"Need"
 }];
->>>>>>> b6b0302fb9916128ea5bd1ea52a0f604d127aeee
+
 
 function submitButton() {
   for (var i = 0; i < itemList.length; i++) {
     var catagoryList = itemList[i];
   }
-<<<<<<< HEAD
+
 if(Catergory === Luxury && Price <= 100){
 
 }
-=======
+
   if (Catergory === Luxury && itemList.Price <= 100) {
 
   }
->>>>>>> b6b0302fb9916128ea5bd1ea52a0f604d127aeee
+
 }
