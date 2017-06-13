@@ -27,6 +27,27 @@ body{
         margin-bottom: 0.2em;
 }
 
+p{
+        font-size: 15px;
+}
+.lluxury{
+        background-color: lightblue;
+}
+.wants{
+        background-color: lightblue;
+}
+.needs{
+        background-color: lightblue;
+}
+.heading{
+        font-size: 70px;
+        text-align: center;
+        padding-top: 1em;
+        /*padding-bottom: 2em;*/
+}
+.paragraph{
+        margin: 0.2em;
+}
 
 .goBack{
         width: 100px;
