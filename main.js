@@ -28,9 +28,10 @@ container.addEventListener('click', function(evt){
       amount++;
   }
 
-  if (isSelected (target, 'need'){
+  if (isSelected (target, 'need')){
   amount--;
   }
+
   else if (notSelected(target, 'need')) {
       //luxury up
       amount++;
