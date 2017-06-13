@@ -1,3 +1,65 @@
 body{
-  background: 
+  background:
+}
+.frame {
+  width: 454px;
+  height: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25vh;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+}
+ul {
+  border: 1px solid black;
+  -webkit-transform: rotate(45deg) translate(96px, 3px);
+  -ms-transform: rotate(45deg) translate(96px, 3px);
+  transform: rotate(45deg) translate(96px, 3px);
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+  background: lightblue;
+}
+li {
+  width: 454px;
+  height: 44px;
+  border-bottom: 1px solid black;
+  line-height: 44px;
+}
+span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+}
+.blue {
+  background: lightblue;
+  -webkit-transform: rotate(-45deg) translate(-144px, -152px);
+  -ms-transform: rotate(-45deg) translate(-144px, -152px);
+  transform: rotate(-45deg) translate(-144px, -152px);
+}
+.green {
+  background: lightgreen;
+  -webkit-transform: rotate(-45deg) translate(-112px, -139px);
+  -ms-transform: rotate(-45deg) translate(-112px, -139px);
+  transform: rotate(-45deg) translate(-112px, -139px);
+}
+.yellow {
+  background: yellow;
+  -webkit-transform: rotate(-45deg) translate(-81px, -126px);
+  -ms-transform: rotate(-45deg) translate(-81px, -126px);
+  transform: rotate(-45deg) translate(-81px, -126px);
+}
+.orange {
+  background: orange;
+  -webkit-transform: rotate(-45deg) translate(-49px, -113px);
+  -ms-transform: rotate(-45deg) translate(-49px, -113px);
+  transform: rotate(-45deg) translate(-49px, -113px);
+}
+.red {
+  background: red;
+  -webkit-transform: rotate(-45deg) translate(-17px, -100px);
+  -ms-transform: rotate(-45deg) translate(-17px, -100px);
+  transform: rotate(-45deg) translate(-17px, -100px);
 }
