@@ -10,7 +10,7 @@ body{
 }
 
 .luxury {
-        background-color: orange;
+
 }
 
 .unfulfilling{
@@ -20,11 +20,16 @@ body{
 .hidden{
         display: none;
 }
+
 .categories{
         text-align: center;
         font-size: 200%;
         padding: 0.5em;
         margin-bottom: 0.2em;
+}
+
+.selected{
+  background-color: grey;
 }
 
 p{
