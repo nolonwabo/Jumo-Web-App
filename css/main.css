@@ -1,5 +1,5 @@
 body{
-  background-color: pink;
+  background-color: #FF1493;
 }
 
 .category {
@@ -35,14 +35,14 @@ body{
 p{
         font-size: 15px;
 }
-.lluxury{
-        background-color: lightblue;
+.luxury{
+        background-color:  #00BFFF;
 }
 .wants{
-        background-color: lightblue;
+        background-color:  #00BFFF;
 }
 .needs{
-        background-color: lightblue;
+        background-color:  #00BFFF;
 }
 .heading{
         font-size: 70px;
