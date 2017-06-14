@@ -1,5 +1,5 @@
 body{
-  background-color: yellow;
+  background-color: pink;
 }
 
 .category {
@@ -57,7 +57,6 @@ p{
 .goBack{
         width: 100px;
         height: 3em;
-        background-color: slategrey;
 }
 .hide{
   display: none;
