@@ -22,6 +22,7 @@ container.addEventListener('click', function(evt){
   if (isSelected(target, 'luxury')){
       //luxury down
       amount--;
+
   }
   else if (notSelected(target, 'luxury')) {
       //luxury up
@@ -48,154 +49,84 @@ container.addEventListener('click', function(evt){
 
 
   target.classList.toggle('selected');
-
-
-  //luxury
-  //want
-  //need
-
-})
-
-
-
-
-// var itemList = [{
-//       totalBudget: "1000";
-//       IconPicture: Price: Catergory:
-//     },
-//     totalBudget: "1000";
-//     IconPicture:
-//     Price:
-//     Catergory:
-//   },
-//   totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// }];
-
 // var template = document.querySelector('.myTemplate').innerHTML;
 // var myTemp = Handlebars.compile(template);
-//
-// var itemList = [{
-//       totalBudget: "1000",
-//       IconPicture: "fish",
-//       Price: "150",
-//       Catergory:"Need"
-//     },
-//     totalBudget: "1000",
-//     IconPicture: "cereals",
-//     Price: "50",
-//     Catergory: "Need",
-//   },
-//   totalBudget: "1000",
-// IconPicture: "cheese",
-//   Price: "45",
-//   Catergory: "Need"
-// },
+var taskId = 0;
+
+var itemList = [{
+      totalBudget: "1000",
+      taskId: 01,
+      Price: "150",
+      Catergory:"need"
+    },
+    totalBudget: "1000",
+    taskId: 02,
+    Price: "50",
+    Catergory: "need",
+  },
+  totalBudget: "1000",
+taskId: 03,
+  Price: "45",
+  Catergory: "need"
+}
 // totalBudget: "1000",
 // IconPicture: "earings",
 //   Price: "120",
-//   Catergory: "Want"
+//   Catergory: "want"
 // },
 // totalBudget: "1000",
 // IconPicture: "handbag",
 //   Price: "300",
-//   Catergory: "Want"
+//   Catergory: "want"
 // },
 // totalBudget: "1000",
 // IconPicture: "clothes",
-//   Price: "1000",
-//   Catergory: "Want"
+//   Price: "500",
+//   Catergory: "want"
 // },
 // totalBudget: "1000",
 // IconPicture: "shirt",
 //   Price: "300",
-//   Catergory: "Want"
+//   Catergory: "want"
 // },
 // totalBudget: "1000",
 // IconPicture: "hawaiin",
 //   Price: "250",
-//   Catergory: "Want"
+//   Catergory: "want"
 // },
 // totalBudget: "1000",
 // IconPicture: "smartphone",
 //   Price: "3500",
-//   Catergory: "Luxury"
+//   Catergory: "luxury"
 // },
 // totalBudget: "1000",
 // IconPicture: "broccoli",
 //   Price: "120",
-//   Catergory: "Need"
+//   Catergory: "need"
 // },
 // totalBudget: "1000",
 // IconPicture: "salad",
 //   Price: "150",
-//   Catergory: "Want"
+//   Catergory: "want"
 // },
 // totalBudget: "1000",
 // IconPicture: "apple",
 //   Price: "45",
-//   Catergory:"Need"
-// }];
+//   Catergory:"need"
+];
+var purchaseBtn = document.querySelector('#purchaseBtn')
 
-
-function submitButton() {
+purchaseBtn.addEventListener("click", function() {
   for (var i = 0; i < itemList.length; i++) {
     var catagoryList = itemList[i];
-  }
 
-if(Catergory === Luxury && Price <= 100){
-
-}
-
- if (Catergory === Luxury && itemList.Price <= 100) {
-
-  }
+if(Catergory === luxury && Price <= 100){
 
 }
+
+ if (Catergory === luxury && itemList.Price <= 100) {
+
+  }
+}
+
+})
