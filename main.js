@@ -1,201 +1,113 @@
-
-
 var container = document.querySelector('.container');
 
-//var template = document.querySelector('.myTemplate').innerHTML;
-//var myTemp = Handlebars.compile(template);
-
-
-function isSelected(target, category){
-  return target.classList.contains(category) && target.classList.contains('selected')
+function isSelected(target, category) {
+    return target.classList.contains(category) && target.classList.contains('selected')
 }
 
-function notSelected(target, category){
-  return target.classList.contains(category) && !target.classList.contains('selected')
+function notSelected(target, category) {
+    return target.classList.contains(category) && !target.classList.contains('selected')
 }
 
-var amount = 0;
+var categoriesSelectedCount = {
+    'need': 0,
+    'want': 0,
+    'luxury': 0
+};
 
-container.addEventListener('click', function(evt){
-  var target = evt.target;
+var categoryAmounts = {
+    'need': 0,
+    'want': 0,
+    'luxury': 0
+};
 
-  if (isSelected(target, 'luxury')){
-      //luxury down
-      amount--;
-  }
-  else if (notSelected(target, 'luxury')) {
-      //luxury up
-      amount++;
-  }
+function totalSpend() {
+    console.log(categoryAmounts);
+}
 
-//  if (isSelected (target, 'need')){
-//  amount--;
-//  }
+function categoryPercentage() {
+    var principleAmount = 1000;
+    var expectedNeedPercentege = 60 % ;
+    var expectedWantPercentege = 30 % ;
+    var expectedLuxuryPercentege = 10 % ;
 
-  //else if (notSelected(target, 'need')) {
-      //luxury up
-    //  amount++;
-//  }
-//  if (isSelected(target, 'want')){
-  //  amount--;
-  //}
-  //else if (notSelected(target, 'want'))
-
-
-  //if the element have the selected category already we are going to remove it so the counter for that category needs to go down
-
-  //otherwise this is a newly selected category and the counter needs to go up
+    var catagoryAmountsNeedVal = categoryAmounts.need;
+    var catagoryAmountsWantVal = categoryAmounts.want;
+    var catagoryAmountsLuxuryVal = categoryAmounts.luxury;
 
 
-  target.classList.toggle('selected');
+    if (catagoryAmountsNeedVal == true) {
+        var percentageCalc = (catagoryAmountsNeedVal / principleAmount) * 100;
+        if(percentageCalc >= expectedNeedPercentege ){
 
+        }
+    }
+    if (catagoryAmountsWantVal == true) {
+        var percentageCalc = (catagoryAmountsWantVal / principleAmount) * 100;
+        if(percentageCalc <= expectedWantPercentege ){
 
-  //luxury
-  //want
-  //need
+        }
+    }
+    if (catagoryAmountsLuxuryVal == true) {
+        var percentageCalc = (catagoryAmountsLuxuryVal / principleAmount) * 100;
+        if(percentageCalc <= expectedLuxuryPercentege ){
 
-})
-
-
-
-
-// var itemList = [{
-//       totalBudget: "1000";
-//       IconPicture: Price: Catergory:
-//     },
-//     totalBudget: "1000";
-//     IconPicture:
-//     Price:
-//     Catergory:
-//   },
-//   totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// },
-// totalBudget: "1000";
-// IconPicture:
-//   Price:
-//   Catergory:
-// }];
-
-// var template = document.querySelector('.myTemplate').innerHTML;
-// var myTemp = Handlebars.compile(template);
-//
-// var itemList = [{
-//       totalBudget: "1000",
-//       IconPicture: "fish",
-//       Price: "150",
-//       Catergory:"Need"
-//     },
-//     totalBudget: "1000",
-//     IconPicture: "cereals",
-//     Price: "50",
-//     Catergory: "Need",
-//   },
-//   totalBudget: "1000",
-// IconPicture: "cheese",
-//   Price: "45",
-//   Catergory: "Need"
-// },
-// totalBudget: "1000",
-// IconPicture: "earings",
-//   Price: "120",
-//   Catergory: "Want"
-// },
-// totalBudget: "1000",
-// IconPicture: "handbag",
-//   Price: "300",
-//   Catergory: "Want"
-// },
-// totalBudget: "1000",
-// IconPicture: "clothes",
-//   Price: "1000",
-//   Catergory: "Want"
-// },
-// totalBudget: "1000",
-// IconPicture: "shirt",
-//   Price: "300",
-//   Catergory: "Want"
-// },
-// totalBudget: "1000",
-// IconPicture: "hawaiin",
-//   Price: "250",
-//   Catergory: "Want"
-// },
-// totalBudget: "1000",
-// IconPicture: "smartphone",
-//   Price: "3500",
-//   Catergory: "Luxury"
-// },
-// totalBudget: "1000",
-// IconPicture: "broccoli",
-//   Price: "120",
-//   Catergory: "Need"
-// },
-// totalBudget: "1000",
-// IconPicture: "salad",
-//   Price: "150",
-//   Catergory: "Want"
-// },
-// totalBudget: "1000",
-// IconPicture: "apple",
-//   Price: "45",
-//   Catergory:"Need"
-// }];
-
-
-function submitButton() {
-  for (var i = 0; i < itemList.length; i++) {
-    var catagoryList = itemList[i];
-  }
-
-if(Catergory === Luxury && Price <= 100){
+        }
+    }
 
 }
 
- if (Catergory === Luxury && itemList.Price <= 100) {
 
-  }
+//if the element have the selected category already we are going to remove it so the counter for that category needs to go down
+//otherwise this is a newly selected category and the counter needs to go up
+
+function manageSpendingCategory(target, category) {
+
+    var categoryPrice = Number(target.dataset.categoryPrice);
+
+    if (isSelected(target, category)) {
+        //luxury down
+        categoriesSelectedCount[category]--;
+        categoryAmounts[category] -= categoryPrice;
+
+    } else if (notSelected(target, category)) {
+        //luxury up
+        categoriesSelectedCount[category]++;
+        categoryAmounts[category] += categoryPrice;
 
 }
+
+container.addEventListener('click', function(evt) {
+    var target = evt.target;
+
+    manageSpendingCategory(target, 'need');
+    manageSpendingCategory(target, 'want');
+    manageSpendingCategory(target, 'luxury');
+
+    totalSpend();
+    target.classList.toggle('selected');
+});
+var purchaseBtn = document.querySelector('#purchaseBtn');
+
+purchaseBtn.addEventListener("click", function() {
+
+    alert(taskId)
+    for (var i = 0; i < itemList.length; i++) {
+        var catagoryList = itemList[i];
+
+        if (Catergory.taskId === true) {
+
+        }
+        if (Catergory === luxury && itemList.Price <= 100) {
+            itemList.totalBudget - itemList.Price;
+
+        }
+    }
+});
+
+
+// function openNav() {
+//     document.getElementById("myNav").style.height = "100%";
+// }
+// function closeNav() {
+//     document.getElementById("myNav").style.height = "0%";
+// }
