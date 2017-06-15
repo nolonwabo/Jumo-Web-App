@@ -103,7 +103,7 @@ var luxuryPercent = categoryPercentage(categoryAmounts.need,categoryAmounts.want
 console.log(luxuryPercent);
 
 
-if (needPercent > wantPercent && luxuryPercent){
+if (needPercent > wantPercent && needPercent > luxuryPercent){
   window.location = "happy.html"
 }
 else{
@@ -111,10 +111,6 @@ else{
 }
 });
 
-
-// function openNav() {
-//     document.getElementById("myNav").style.height = "100%";
-// }
-// function closeNav() {
-//     document.getElementById("myNav").style.height = "0%";
-// }
+function nextPage(){
+        window.location = "index.html"
+}
