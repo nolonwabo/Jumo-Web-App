@@ -1,4 +1,7 @@
+var principleAmount = 1000;
 var container = document.querySelector('.container');
+var amountAvailableOutput = document.querySelector('.remainderDisplay');
+
 
 function isSelected(target, category) {
     return target.classList.contains(category) && target.classList.contains('selected')
@@ -20,12 +23,8 @@ var categoryAmounts = {
     'luxury': 0
 };
 
-// function totalSpend() {
-//     console.log(categoryAmounts);
-// }
 
-function categoryPercentage(catagoryAmountsNeedVal,catagoryAmountsWantVal,catagoryAmountsLuxuryVal) {
-    var principleAmount = 1000;
+function calculatingPurchaseAmount(catagoryAmountsNeedVal,catagoryAmountsWantVal,catagoryAmountsLuxuryVal) {
 
     function needPercentageCalcVal(){
       var percentageCalc = 0;
@@ -51,11 +50,17 @@ function categoryPercentage(catagoryAmountsNeedVal,catagoryAmountsWantVal,catago
         }
        return percentageCalc;
     };
+    function amountAvailable(){
+      var remainningAmount = principleAmount - (catagoryAmountsNeedVal  +catagoryAmountsWantVal + catagoryAmountsLuxuryVal)
+      return remainningAmount;
+
+    }
 
     return   {
       needPercentageCalcVal,
       wantPercentageCalcVal,
-      luxuryPercentageCalcVal
+      luxuryPercentageCalcVal,
+      amountAvailable
     };
 };
 
@@ -95,26 +100,28 @@ var purchaseBtn = document.querySelector('#purchaseBtn');
 purchaseBtn.addEventListener("click", function(e) {
  //categoryPercentage()
   e.preventDefault();
-var needPercent = categoryPercentage(categoryAmounts.need,categoryAmounts.want,categoryAmounts.luxury).needPercentageCalcVal();
-console.log(needPercent);
-var wantPercent = categoryPercentage(categoryAmounts.need,categoryAmounts.want,categoryAmounts.luxury).wantPercentageCalcVal();
-console.log(wantPercent);
-var luxuryPercent = categoryPercentage(categoryAmounts.need,categoryAmounts.want,categoryAmounts.luxury).luxuryPercentageCalcVal();
-console.log(luxuryPercent);
-
+var needPercent = calculatingPurchaseAmount(categoryAmounts.need,categoryAmounts.want,categoryAmounts.luxury).needPercentageCalcVal();
+var wantPercent = calculatingPurchaseAmount(categoryAmounts.need,categoryAmounts.want,categoryAmounts.luxury).wantPercentageCalcVal();
+var luxuryPercent = calculatingPurchaseAmount(categoryAmounts.need,categoryAmounts.want,categoryAmounts.luxury).luxuryPercentageCalcVal();
 
 if (needPercent > wantPercent && luxuryPercent){
-  window.location = "happy.html"
+
+  amountAvailableOutput.innerHTML = calculatingPurchaseAmount(categoryAmounts.need,categoryAmounts.want,categoryAmounts.luxury).amountAvailable();
+
 }
-else{
-  window.location = "sad.html"
+else {
+amountAvailableOutput.innerHTML = calculatingPurchaseAmount(categoryAmounts.need,categoryAmounts.want,categoryAmounts.luxury).amountAvailable();
+document.querySelector('.sad').classList.remove('sad');
 }
+
+
+
 });
 
 
-// function openNav() {
-//     document.getElementById("myNav").style.height = "100%";
-// }
-// function closeNav() {
-//     document.getElementById("myNav").style.height = "0%";
-// }
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}

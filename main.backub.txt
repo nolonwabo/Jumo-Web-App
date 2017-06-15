@@ -112,13 +112,44 @@
               </div>
           </div>
         </div>
-            <div class="screenTwo hide">
+        <div class="sad">
+        <div class="container">
+          <div class="row">
+            <div class="remainderDisplay">
 
             </div>
+          </div>
+        <div class="row">
+        <img src="ssadImage.png">
+        <h4>Seems like you didn't balance on your heirarchy and we care on how you spend your money, please try again.<br> <b>CHEERS!!!</b></h4>
 
-        <script src="main.js" charset="utf-8"></script>
+        <div class="four columns goBack sadFace">
+            <input type="button" class="goBack " value="Go Back">
+         </div>
+         </div>
+         </div>
+       </div>
+       <div class="happy">
+         <div class="container">
+           <div class="row">
+             <div class="remainderDisplay">
+
+               <div>
+           </div>
+           <div class="row">
+             <img src="happyFace.png">
+             <h1>Well done! you spend your money wisely!!!</h1>
+             <div class="four columns happyFaces">
+               <input type="button" value="Done!!!">
+             </div>
+             <!-- <input type="button" value="Done!!!"> -->
+           </div>
+         </div>
+       </div>
+
 
 
 </body>
+<script src="main.js" charset="utf-8"></script>
 
 </html>

@@ -1,0 +1,19 @@
+img{
+max-width: 100%;
+    height: auto;
+    width: auto\9;
+    margin-left: 20%;
+  }
+
+  .container{
+    margin-left: 20%;
+  }
+  body{
+    background-color:#FF1493;
+  }
+
+.happyFaces{
+background-size: cover;
+border-width: 20px;
+font-size: 50px;
+}

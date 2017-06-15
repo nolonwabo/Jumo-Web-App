@@ -1,0 +1,18 @@
+img{
+max-width: 100%; */
+    height: auto;
+    width: auto\9;
+    margin-left: 20%;
+  }
+  .container{
+    margin-left: 25%;
+    margin-top: 10px;
+  }
+  body{
+    background-color: #00BFFF;
+  }
+.sadFace{
+  background-size: cover;
+  border-width: 20px;
+  font-size: 50px;
+}
