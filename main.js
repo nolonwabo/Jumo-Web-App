@@ -103,7 +103,12 @@ var luxuryPercent = categoryPercentage(categoryAmounts.need,categoryAmounts.want
 console.log(luxuryPercent);
 
 
+if (categoryAmounts.need ===0 && categoryAmounts.want === 0 && categoryAmounts.luxury === 0) {
+alert("Please select items first");
+return;
+}
 if (needPercent > wantPercent && needPercent > luxuryPercent){
+
   window.location = "happy.html"
 }
 else{
